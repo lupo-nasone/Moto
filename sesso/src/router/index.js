@@ -1,0 +1,21 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../App.vue'
+import ListinoView from "../views/Listino-Ducati.vue";
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/Listino-Ducati',
+      name: 'Ducati',
+      component: ListinoView
+    }
+  ]
+})
+
+export default router
